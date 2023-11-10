@@ -21,7 +21,8 @@
         margin-right: 35px;
         
         input {
-      
+        padding-left: 15px;
+        font-size: 26x;
         flex: 1;        
         border-style: solid;
         border-color: rgb(192, 192, 192);
@@ -30,8 +31,7 @@
         box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
         }
         input::placeholder {
-            font-size: 16x;
-            padding-left: 10px;
+            font-size: 26x;
         }
         .btn1 {
             background-color: rgb(240, 240, 240);
@@ -67,6 +67,7 @@
     }
     .Settings {
         // background-color: aqua;
+        flex-shrink: 0;
         width: 200px;
         align-items: center;
         display: flex;
