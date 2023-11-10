@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Roboto:wght@500&display=swap');
+.header {
+    padding: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    .youLogo {
+        // background-color: rebeccapurple;
+        display: flex;
+        align-items: center;
+        // width: 150px;
+        img {
+            width: 150px;
+        }
+    }
+    .Search {
+        flex: 1;   
+        max-width: 500px;
+        display: flex;
+        margin-left: 70px;
+        margin-right: 35px;
+        
+        input {
+      
+        flex: 1;        
+        border-style: solid;
+        border-color: rgb(192, 192, 192);
+        border-width: 1px;
+        border-radius: 20px;
+        box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+        }
+        input::placeholder {
+            font-size: 16x;
+            padding-left: 10px;
+        }
+        .btn1 {
+            background-color: rgb(240, 240, 240);
+            border-color: rgb(192, 192, 192);
+            border-width: 1px;
+            width: 15%;
+            // border: none;
+            border-bottom-right-radius: 30px;
+            border-top-right-radius: 30px;
+            margin-left: -38px;
+            margin-right: 20px;
+
+            cursor: pointer;
+            img {
+                height: 25px;
+            }
+        }
+
+        .btn2 {
+            border-radius: 20px;
+            border-width: 1px;
+            border: none;
+            display: flex;
+            align-items: center;
+            background-color: rgb(240, 240, 240);
+            border-color: rgb(192, 192, 192);
+
+            img {
+                height: 25px;
+            }
+            cursor: pointer;
+        }
+    }
+    .Settings {
+        // background-color: aqua;
+        width: 200px;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        .upload img{
+            width: 90%;
+        }
+        .noti img{
+            width: 100%;
+        }
+        .profileP img{
+            width: 50%;
+            border-radius: 30px;
+        }
+    }
+}
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 97%;
+    column-gap: 50px;
+    margin: 0 auto;
+    // background-color: red;
+
+    // margin-top: 30px;
+    .ariana_contain {
+        cursor: pointer;
+        margin-top: 30px;
+        .ariana_img img {
+            width: 100%;
+            border-radius: 20px;
+            }
+        .ariana_channel {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            column-gap: 20px;
+            width: 100%;
+            margin-top: 10px;
+            // background-color: gray;
+
+            .ariana_channel_img img{
+                width: 100%;
+                border-radius: 30px;
+            }
+            .ariana_des {
+               p {
+                margin: 0;
+                font-family: 'Roboto', sans-serif;
+                color: rgb(15, 15, 15);
+               }
+               .textT {
+                color: black;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+               }
+               .textM {
+                font-size: 14px;
+                margin: 15px 0 10px 0;
+               }
+               .textB {
+                font-size: 14px;
+               }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        // background-color: red;
+    }
+
+    .header {
+        padding: 5px;
+        justify-content: space-around;
+
+        // flex-direction: column;
+        .youLogo {
+            img {
+                width: 100px;
+            }
+        }
+        .Search {
+            display: none;
+            max-width: 0;
+            input {
+                display: flex;
+            }
+            // margin: 0;
+        }
+        .Settings {
+            display: none;
+        }
+    }
+    
+    .main {
+        grid-template-columns: 1fr;
+    }
+}
