@@ -8,8 +8,14 @@
 .header .youLogo {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 220px;
 }
-.header .youLogo img {
+.header .youLogo .menu {
+  height: 40px;
+  cursor: pointer;
+}
+.header .youLogo .logo {
   width: 150px;
 }
 .header .Search {
@@ -127,7 +133,7 @@
   font-size: 14px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 428px) {
   .header {
     padding: 5px;
     justify-content: space-around;

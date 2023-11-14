@@ -8,8 +8,13 @@
         // background-color: rebeccapurple;
         display: flex;
         align-items: center;
-        // width: 150px;
-        img {
+        justify-content: space-between;
+        width: 220px;
+        .menu {
+            height: 40px;
+            cursor: pointer;
+        }
+        .logo {
             width: 150px;
         }
     }
@@ -38,7 +43,6 @@
             border-color: rgb(192, 192, 192);
             border-width: 1px;
             width: 15%;
-            // border: none;
             border-bottom-right-radius: 30px;
             border-top-right-radius: 30px;
             margin-left: -38px;
@@ -136,16 +140,12 @@
     }
 }
 
-@media (max-width: 375px) {
-    body {
-        // background-color: red;
-    }
+@media (max-width: 428px) {
 
     .header {
         padding: 5px;
         justify-content: space-around;
 
-        // flex-direction: column;
         .youLogo {
             img {
                 width: 100px;
@@ -157,7 +157,6 @@
             input {
                 display: flex;
             }
-            // margin: 0;
         }
         .Settings {
             display: none;
